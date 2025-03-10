@@ -5,66 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta author="Chaïma El Kadiri">
     <meta description="Portfolio de Chaïma El Kadiri">
-    <link rel="stylesheet" href="/assets/css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Luxurious+Script&display=swap" rel="stylesheet">
     <title>Chaïma El Kadiri - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#mySkills">Skills</a></li>
-            <li><a href="#myProjects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+<body class="bg-gradient-to-b from-[#948787] to-[#141212] text-antiquewhite">
+
+    <nav class="fixed top-0 w-full bg-transparent py-4 px-8 flex justify-between items-center z-10">
+        <ul class="flex space-x-6">
+            <li><a href="#resume" class="text-lg font-bold text-[#141212]">Resume</a></li>
+            <li><a href="#skills" class="text-lg font-bold text-[#141212]">Skills</a></li>
+            <li><a href="#projects" class="text-lg font-bold text-[#141212]">Projects</a></li>
+            <li><a href="#about" class="text-lg font-bold text-[#141212]">About</a></li>
+            <li><a href="#contact" class="text-lg font-bold text-[#141212]">Contact</a></li>
         </ul>
     </nav>
 
-    <header>
-        <div class="overlay"></div>
-        <h1>Chaïma El Kadiri</h1>
-        <h2>Développeuse Web et Web Mobile PHP</h2>
+    <header class="h-[60vh] bg-[url('/assets/images/mountain.jpg')] bg-cover bg-center flex flex-col justify-center items-center text-center relative">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <h1 class="text-5xl font-cursive text-[#141212] relative">Chaïma El Kadiri</h1>
+        <h2 class="text-2xl font-serif text-[#181717] relative">Développeuse Web et Web Mobile PHP</h2>
     </header>
-<main>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-container">
-            <div class="project-card">La Gazette du Sorcier - Forum</div>
-            <div class="project-card">Fandom Tales - Site</div>
-        </div>
-    </section>
 
-    <section id="resume">
-        <h2>My Resume</h2>
-        <div class="resume-content">
-            <div class="experience">Expérience</div>
-            <div class="education">Éducation</div>
-        </div>
-    </section>
+    <main class="mt-24 px-8 md:px-32">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Présentation rapide...</p>
-    </section>
+        <section id="projects" class="bg-white bg-opacity-10 p-8 rounded-lg text-center my-8">
+            <h2 class="text-2xl font-bold">My Projects</h2>
+            <div class="flex justify-center gap-6 mt-6">
+                <div class="bg-white text-black p-6 rounded-lg w-48">La Gazette du Sorcier - Forum</div>
+                <div class="bg-white text-black p-6 rounded-lg w-48">Fandom Tales - Site</div>
+            </div>
+        </section>
 
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skill">Java</div>
-        <div class="skill">Symfony</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">PHP</div>
-    </section>
+        <section id="resume" class="bg-white bg-opacity-10 p-8 rounded-lg text-center my-8">
+            <h2 class="text-2xl font-bold">My Resume</h2>
+            <div class="flex justify-around mt-6">
+                <div class="text-lg">Expérience</div>
+                <div class="text-lg">Éducation</div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            <button type="submit">Envoyer</button>
-        </form>
-    </section>
-</main>
+        <section id="about" class="bg-white bg-opacity-10 p-8 rounded-lg text-center my-8">
+            <h2 class="text-2xl font-bold">About Me</h2>
+            <p class="mt-4">Présentation rapide...</p>
+        </section>
+
+        <section id="skills" class="bg-white bg-opacity-10 p-8 rounded-lg text-center my-8">
+            <h2 class="text-2xl font-bold">My Skills</h2>
+            <div class="mt-4 grid grid-cols-2 gap-4">
+                <span class="font-bold">Java</span>
+                <span class="font-bold">Symfony</span>
+                <span class="font-bold">JavaScript</span>
+                <span class="font-bold">PHP</span>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-white bg-opacity-10 p-8 rounded-lg text-center my-8">
+            <h2 class="text-2xl font-bold">Contact</h2>
+            <form class="mt-4">
+                <input type="email" placeholder="Email" class="block w-4/5 mx-auto p-2 border rounded-md">
+                <textarea placeholder="Message" class="block w-4/5 mx-auto p-2 border rounded-md mt-4"></textarea>
+                <button type="submit" class="bg-gray-800 text-white px-6 py-2 rounded-md mt-4">Envoyer</button>
+            </form>
+        </section>
+
+    </main>
+
 </body>
 </html>
