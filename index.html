@@ -8,31 +8,46 @@
     <title>Chaïma El Kadiri - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gradient-to-b from-[#948787] to-[#141212] text-antiquewhite">
+<body class="bg-gradient-to-b from-[#948787] via-[#948787] via-0% to-[#141212] text-antiquewhite ">
 
     <nav class="fixed top-0 w-full bg-transparent py-4 px-8 flex justify-between items-center z-10">
         <ul class="flex space-x-6">
-            <li><a href="#resume" class="text-lg font-bold text-[#141212]">Resume</a></li>
-            <li><a href="#skills" class="text-lg font-bold text-[#141212]">Skills</a></li>
-            <li><a href="#projects" class="text-lg font-bold text-[#141212]">Projects</a></li>
-            <li><a href="#about" class="text-lg font-bold text-[#141212]">About</a></li>
-            <li><a href="#contact" class="text-lg font-bold text-[#141212]">Contact</a></li>
+            <li><a href="#resume" class="text-lg font-bold text-[#2c2c2c]">Resume</a></li>
+            <li><a href="#skills" class="text-lg font-bold text-[#2c2c2c]">Skills</a></li>
+            <li><a href="#projects" class="text-lg font-bold text-[#2c2c2c]">Projects</a></li>
+            <li><a href="#about" class="text-lg font-bold text-[#2c2c2c]">About</a></li>
+            <li><a href="#contact" class="text-lg font-bold text-[#2c2c2c]">Contact</a></li>
         </ul>
     </nav>
 
-    <header class="h-[60vh] bg-[url('/assets/images/mountain.jpg')] bg-cover bg-center flex flex-col justify-center items-center text-center relative">
-        <div class="absolute inset-0 bg-black opacity-30"></div>
+    <header class="h-[60vh] bg-[url('/assets/images/mountain.jpg')] bg-cover bg-center flex flex-col justify-center items-center text-center relative ">
+        <div class="absolute inset-0 bg-white opacity-60"></div>
+        <div class="bg-white bg-opacity-30 p-4 rounded-lg">
         <h1 class="text-5xl font-cursive text-[#141212] relative">Chaïma El Kadiri</h1>
         <h2 class="text-2xl font-serif text-[#181717] relative">Développeuse Web et Web Mobile PHP</h2>
+        </div>
     </header>
 
-    <main class="mt-24 px-8 md:px-32">
+    <main class="mt-24 px-8 md:px-48">
 
         <section id="projects" class="bg-white bg-opacity-10 p-8 rounded-lg text-center my-8">
             <h2 class="text-2xl font-bold">My Projects</h2>
-            <div class="flex justify-center gap-6 mt-6">
-                <div class="bg-white text-black p-6 rounded-lg w-48">La Gazette du Sorcier - Forum</div>
-                <div class="bg-white text-black p-6 rounded-lg w-48">Fandom Tales - Site</div>
+            <div class="flex justify-center gap-10 mt-6">
+                <div class="w-1/3">
+                    <img src="/assets/images/project1.jpg" alt="Project 1" class="rounded-lg">
+                    <h3 class="text-lg font-bold mt-4">La Gazette du Sorcier</h3>
+                    <p class="mt-2">Description du projet 1</p>
+                </div>
+                <div class="w-1/3">
+                    <img src="/assets/images/project2.jpg" alt="Project 2" class="rounded-lg">
+                    <h3 class="text-lg font-bold mt-4">FandomTales</h3>
+                    <p class="mt-2">Description du projet 2</p>
+                </div>
+                <div class="w-1/3">
+                    <img src="/assets/images/project3.jpg" alt="Project 3" class="rounded-lg">
+                    <h3 class="text-lg font-bold mt-4">IMDb</h3>
+                    <p class="mt-2">Description du projet 3</p>
+                </div>
             </div>
         </section>
 
