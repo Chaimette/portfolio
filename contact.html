@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="Chaïma El Kadiri">
+    <meta description="Portfolio de Chaïma El Kadiri - Page de contact">
+    <title>Contact - Chaïma El Kadiri</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-[#948787] via-[#948787] via-0% to-[#141212] text-antiquewhite flex flex-col items-center min-h-screen">
+
+    <nav class="fixed top-0 w-full bg-transparent py-4 px-8 flex justify-between items-center z-10">
+        <ul class="flex space-x-6">
+            <li><a href="index.html" class="text-lg font-bold text-[#2c2c2c]">Accueil</a></li>
+            <li><a href="projects.html" class="text-lg font-bold text-[#2c2c2c]">Projets</a></li>
+            <li><a href="about.html" class="text-lg font-bold text-[#2c2c2c]">À propos</a></li>
+            <li><a href="contact.html" class="text-lg font-bold text-[#2c2c2c]">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="h-[40vh] bg-[url('/assets/images/mountain.jpg')] bg-cover bg-center flex flex-col justify-center items-center text-center relative w-full">
+        <div class="absolute inset-0 bg-white opacity-60"></div>
+        <div class="bg-white bg-opacity-30 p-4 rounded-lg relative">
+            <h1 class="text-5xl font-cursive text-[#141212]">Contactez-moi</h1>
+            <h2 class="text-2xl font-serif text-[#181717]">Restons en contact !</h2>
+        </div>
+    </header>
+
+    <main class="mt-12 px-8 md:px-48 w-full max-w-3xl">
+        <section class="bg-white bg-opacity-10 p-8 rounded-lg text-center shadow-lg">
+            <h2 class="text-2xl font-bold mb-4">Envoyez-moi un message</h2>
+            <form class="mt-4 space-y-4">
+                <input type="text" placeholder="Votre nom" class="block w-full p-3 border rounded-md shadow-inner bg-gray-100 text-gray-900">
+                <input type="email" placeholder="Votre email" class="block w-full p-3 border rounded-md shadow-inner bg-gray-100 text-gray-900">
+                <textarea placeholder="Votre message" rows="4" class="block w-full p-3 border rounded-md shadow-inner bg-gray-100 text-gray-900"></textarea>
+                <button type="submit" class="bg-gray-800 text-white px-6 py-3 rounded-md hover:bg-gray-700 transition">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="mt-12 p-4 text-center text-sm">
+        <p class="text-amber-50">&copy; 2025 Chaïma El Kadiri - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
