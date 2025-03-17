@@ -103,12 +103,10 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Form Submission
 const contactForm = document.getElementById("contact-form");
 
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  // Here you would typically add code to send the form data to your server
   alert("Thank you for your message! I will get back to you soon.");
   contactForm.reset();
 });
