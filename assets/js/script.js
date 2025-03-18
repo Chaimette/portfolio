@@ -1,5 +1,3 @@
-
-// Mobile Menu Toggle
 const mobileMenuButton = document.getElementById("mobile-menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
 
@@ -7,7 +5,6 @@ mobileMenuButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
-// Header Scroll Effect
 const header = document.querySelector("header");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
@@ -19,9 +16,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Typing Effect
 const typingElement = document.getElementById("typing");
-const words = ["Web Developer", "UI/UX Designer", "Freelancer"];
+const words = ["Web Developer", "Freelancer", "Fullstack Developer", "Web Designer"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -56,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(type, 1000);
 });
 
-// Scroll Animation
 const faders = document.querySelectorAll(".fade-in");
 
 const appearOptions = {
@@ -76,7 +71,6 @@ faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
 
-// Smooth Scrolling
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -87,7 +81,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     const target = document.querySelector(targetId);
     if (!target) return;
 
-    // Close mobile menu if open
     if (!mobileMenu.classList.contains("hidden")) {
       mobileMenu.classList.add("hidden");
     }
