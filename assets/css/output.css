@@ -1953,6 +1953,13 @@ button,
       2rem;
 }
 
+.mx-24{
+  margin-left:
+      6rem;
+  margin-right:
+      6rem;
+}
+
 .mb-1{
   margin-bottom:
       0.25rem;
@@ -2016,6 +2023,11 @@ button,
 .mt-8{
   margin-top:
       2rem;
+}
+
+.ml-24{
+  margin-left:
+      6rem;
 }
 
 .block{
