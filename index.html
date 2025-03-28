@@ -397,14 +397,13 @@
 
                     <div class="fade-in">
                         <form
-                            action="https://api.web3forms.com/submit"
+                            action="https://formspree.io/f/xrbpapqo"
                             method="POST"
                             id="contact-form"
                             class="bg-white rounded-lg p-8 shadow-lg"
                         >
-                        <input type="hidden" name="access_key" value="d8b41944-4815-4a2a-b749-41af367810e2" />
                             <h3 class="text-3xl font-bold mb-10 text-center">Send Me a Message</h3>
-                           
+
                             <div class="mb-6 ml-4">
                                 <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
                                 <input
@@ -446,9 +445,10 @@
                             </div>
                             <!-- Honeypot Spam Protection -->
                             <input type="checkbox" name="botcheck" class="hidden" style="display: none" />
-                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
                             <button
                                 type="submit"
+                                id="submit-btn"
                                 class="ml-4 px-6 py-3 bg-primary text-white rounded-lg hover:bg-secondary transform hover:-translate-y-1 transition-all shadow-md"
                             >
                                 <!-- w-full pour largeur totale -->
