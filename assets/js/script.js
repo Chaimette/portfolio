@@ -19,9 +19,8 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// Typing Effect
 const typingElement = document.getElementById("typing");
-const words = ["Web Developer", "UI/UX Designer", "Freelancer"];
+const words = ["Web Developer", "Freelancer", "Web Designer"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
