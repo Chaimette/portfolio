@@ -1,0 +1,83 @@
+{
+    "nav": {
+      "home": "Accueil",
+      "about": "À propos",
+      "projects": "Projets",
+      "skills": "Compétences",
+      "contact": "Contact",
+      "language": "EN 🇬🇧"
+    },
+    "home": {
+      "greeting": "Bonjour, je suis",
+      "profession": "Je suis",
+      "roles": ["Développeuse Web", "Designer Web", "Développeuse Full-Stack"],
+      "description": "Je crée des sites et applications web fonctionnels et esthétiques. Passionnée par le code (plus ou moins) propre, la conception centrée sur l'utilisateur et les environnements sécurisés.",
+      "cta": {
+        "work": "Voir mes projets",
+        "contact": "Me contacter"
+      }
+    },
+    "about": {
+      "title": "À propos de moi",
+      "subtitle": "Apprenez-en un peu plus sur moi et mon parcours professionnel.",
+      "whoIAm": "Qui suis-je",
+      "description1": "Je suis une développeuse full-stack passionnée, toujours en formation. Je me spécialise dans le développement back-end, créant des sites web efficaces et sécurisés.",
+      "description2": "Mon parcours dans le développement web a commencé lorsque j'étais à l'université, où j'ai découvert ma passion pour la création d'expériences numériques. Depuis, j'ai tout fait pour améliorer mes compétences grâce à diverses formations, dans différents langages de programmation.",
+      "info": {
+        "name": "Nom :",
+        "email": "Email :",
+        "location": "Localisation :",
+        "available": "Disponible pour :"
+      },
+      "availableFor": "Freelance, Temps plein",
+      "resume": "Télécharger mon CV"
+    },
+    "projects": {
+      "title": "Mes projets",
+      "subtitle": "Découvrez certains des projets sur lesquels j'ai travaillé récemment.",
+      "viewProject": "Voir le projet",
+      "viewAll": "Voir tous les projets",
+      "items": [
+        {
+          "title": "Fandom Tales",
+          "description": "Une bibliothèque entièrement responsive construite avec PHP et Symfony, comprenant une authentification utilisateur, un éditeur de texte intégré et un tableau de bord administrateur. Ce projet est toujours en développement."
+        },
+        {
+          "title": "Site Portfolio",
+          "description": "Un site portfolio moderne construit avec HTML, TailwindCSS et JavaScript. Comprend un défilement fluide, des animations et un formulaire de contact."
+        },
+        {
+          "title": "La Gazette du Sorcier",
+          "description": "Un forum où les fans d'Harry Potter peuvent se connecter et partager sur leur sorcier préféré. Ce projet était un projet scolaire présenté aux étudiants de la Wild Code School en juillet 2024."
+        }
+      ]
+    },
+    "skills": {
+      "title": "Mes compétences",
+      "subtitle": "Voici les technologies et outils avec lesquels je travaille."
+    },
+    "contact": {
+      "title": "Contactez-moi",
+      "subtitle": "Vous avez un projet en tête ? Travaillons ensemble pour donner vie à vos idées.",
+      "info": {
+        "title": "Informations de contact",
+        "email": "Email",
+        "phone": "Téléphone",
+        "location": "Localisation",
+        "follow": "Suivez-moi"
+      },
+      "form": {
+        "title": "Envoyez-moi un message",
+        "name": "Votre nom",
+        "email": "Votre email",
+        "subject": "Sujet",
+        "message": "Votre message",
+        "submit": "Envoyer le message"
+      }
+    },
+    "footer": {
+      "subtitle": "Développeuse Web | Designer Web | Créatrice",
+      "copyright": "© 2025 Chaïma El Kadiri. Tous droits réservés.",
+      "madewith": "Fait avec amour et beaucoup de café"
+    }
+  }

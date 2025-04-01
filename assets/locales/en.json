@@ -1,0 +1,83 @@
+{
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "skills": "Skills",
+      "contact": "Contact",
+      "language": "FR 🇫🇷"
+    },
+    "home": {
+      "greeting": "Hi, I'm",
+      "profession": "I'm a",
+      "roles": ["Web Developer", "Web Designer", "Full-Stack Developer"],
+      "description": "I create beautiful, functional websites and applications. Passionate about (mostly) clean code, user-centered design and secure environments.",
+      "cta": {
+        "work": "View My Work",
+        "contact": "Contact Me"
+      }
+    },
+    "about": {
+      "title": "About Me",
+      "subtitle": "Get to know a bit about me and my professional journey.",
+      "whoIAm": "Who I Am",
+      "description1": "I'm a passionate full-stack web developer, still in training. I specialize in back-end development, creating efficient and secure websites.",
+      "description2": "My journey in web development started when I was in college, where I discovered my passion for creating digital experiences. Since then, I've done everything to improve my skills with various training, in different programming languages.",
+      "info": {
+        "name": "Name:",
+        "email": "Email:",
+        "location": "Location:",
+        "available": "Available for:"
+      },
+      "availableFor": "Freelance, Full-time",
+      "resume": "Download Resume"
+    },
+    "projects": {
+      "title": "My Projects",
+      "subtitle": "Take a look at some of the projects I've worked on recently.",
+      "viewProject": "View Project",
+      "viewAll": "View All Projects",
+      "items": [
+        {
+          "title": "Fandom Tales",
+          "description": "A fully responsive library built with PHP and Symfony, featuring user authentication, a built-in text-editor, and an admin dashboard. This project is still in development."
+        },
+        {
+          "title": "Portfolio Website",
+          "description": "A modern portfolio website built with HTML, TailwindCSS, and JavaScript. Features smooth scrolling, animations, and a contact form."
+        },
+        {
+          "title": "La Gazette du Sorcier",
+          "description": "A forum where Harry Potter fans can connect and share about their favorite wizard. This project was a school project and presented to the Wild Code School's students in July 2024."
+        }
+      ]
+    },
+    "skills": {
+      "title": "My Skills",
+      "subtitle": "These are the technologies and tools I work with."
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "subtitle": "Have a project in mind? Let's work together to bring your ideas to life.",
+      "info": {
+        "title": "Contact Information",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "follow": "Follow Me"
+      },
+      "form": {
+        "title": "Send Me a Message",
+        "name": "Your Name",
+        "email": "Your Email",
+        "subject": "Subject",
+        "message": "Your Message",
+        "submit": "Send Message"
+      }
+    },
+    "footer": {
+      "subtitle": "Web Developer | Web Designer | Creator",
+      "copyright": "© 2025 Chaïma El Kadiri. All rights reserved.",
+      "madewith": "Made with love and a lot of coffee"
+    }
+  }

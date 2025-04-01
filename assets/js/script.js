@@ -127,3 +127,43 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     submitBtn.disabled = false;
     submitBtn.textContent = "Send Message";
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const languageSwitch = document.getElementById('language-switch');
+    const languageText = languageSwitch.querySelector('.language-text');
+    let currentLanguage = 'en';
+    loadTranslations(currentLanguage);
+
+    languageSwitch.addEventListener('click', () => {
+      if (currentLanguage === 'en') {
+        currentLanguage = 'fr';
+        languageText.textContent = 'EN 🇬🇧';
+        loadTranslations('fr');
+      } else {
+        currentLanguage = 'en';
+        languageText.textContent = 'FR 🇫🇷';
+        loadTranslations('en');
+      }
+    });
+  });
+
+  function loadTranslations(lang) {
+    fetch(`./assets/locales/${lang}.json`)
+        .then(response => response.json())
+        .then(data => {
+            applyTranslations(data);
+        })
+        .catch(error => console.error('Error loading translations:', error));
+}
+function applyTranslations(translations) {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[key]) {
+            if (element.tagName === 'INPUT' && element.type === 'submit') {
+                element.value = translations[key];
+            } else {
+                element.textContent = translations[key];
+            }
+        }
+    });
+}
