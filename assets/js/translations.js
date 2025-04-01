@@ -305,20 +305,20 @@ const translations = {
     if (window.isDeleting) {
       typingElement.textContent = currentWord.substring(0, window.charIndex - 1);
       window.charIndex--;
-      window.typingDelay = 100;
+      window.typingDelay = 200;
     } else {
       typingElement.textContent = currentWord.substring(0, window.charIndex + 1);
       window.charIndex++;
-      window.typingDelay = 150;
+      window.typingDelay = 300;
     }
   
     if (!window.isDeleting && window.charIndex === currentWord.length) {
       window.isDeleting = true;
-      window.typingDelay = 1000;
+      window.typingDelay = 1750;
     } else if (window.isDeleting && window.charIndex === 0) {
       window.isDeleting = false;
       window.wordIndex = (window.wordIndex + 1) % window.words.length;
-      window.typingDelay = 500;
+      window.typingDelay = 1000;
     }
   
     window.typeTimeout = setTimeout(type, window.typingDelay);
