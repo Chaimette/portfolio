@@ -108,7 +108,7 @@ const translations = {
         subtitle: "Apprenez-en un peu plus sur moi et mon parcours professionnel.",
         whoIAm: "Qui suis-je",
         description1: "Je suis une développeuse full-stack passionnée, toujours en formation. Je me spécialise dans le développement back-end, créant des sites web efficaces et sécurisés.",
-        description2: "Mon parcours dans le développement web a commencé lorsque j'étais à l'université, où j'ai découvert ma passion pour la création d'expériences numériques. Depuis, j'ai tout fait pour améliorer mes compétences grâce à diverses formations, dans différents langages de programmation.",
+        description2: "Mon parcours dans le développement web a commencé lorsque j'étais une employée de bureau lambda et lassée, où j'ai découvert ma passion pour la création d'expériences numériques. Depuis, j'ai tout fait pour améliorer mes compétences grâce à plusieurs formations dans différents langages de programmation, ainsi qu'une variété d'outils de programmation.",
         info: {
           name: "Nom :",
           email: "Email :",
@@ -175,17 +175,6 @@ let isDeleting = false;
 let typingDelay = 150;
 let typeTimeout;
 
-function getTranslation(key, lang) {
-    const keyParts = key.split('.');
-    let value = translations[lang];
-    
-    for (const part of keyParts) {
-        if (value === undefined) break;
-        value = value[part];
-    }
-    
-    return value;
-}
 
 function applyTranslations(lang) {
     document.querySelectorAll('[data-i18n]').forEach(element => {
@@ -221,6 +210,18 @@ function applyTranslations(lang) {
     updateTypingWords(lang);
     
     updateLanguageDisplay(lang);
+}
+
+function getTranslation(key, lang) {
+    const keyParts = key.split('.');
+    let value = translations[lang];
+    
+    for (const part of keyParts) {
+        if (value === undefined) break;
+        value = value[part];
+    }
+    
+    return value;
 }
 
 function updateTypingWords(lang) {
