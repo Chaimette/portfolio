@@ -1,4 +1,3 @@
-// First, create a translations object with your language data
 const translations = {
     en: {
       nav: {
@@ -160,37 +159,32 @@ const translations = {
           submit: "Envoyer le message"
         }
       },
-      footer: {
-        subtitle: "Développeuse Web | Designer Web | Créatrice",
-        copyright: "© 2025 Chaïma El Kadiri. Tous droits réservés.",
-        madewith: "Fait avec amour et beaucoup de café"
-      }
+      // footer: {
+      //   subtitle: "Développeuse Web | Designer Web | Créatrice",
+      //   copyright: "© 2025 Chaïma El Kadiri. Tous droits réservés.",
+      //   madewith: "Fait avec amour et beaucoup de café"
+      // }
     }
   };
   
-  // Create translation targets with their respective selectors and translation keys
   const translationTargets = [
-    // Navigation
     { selector: 'nav ul li:nth-child(1) a', key: 'nav.home' },
     { selector: 'nav ul li:nth-child(2) a', key: 'nav.about' },
     { selector: 'nav ul li:nth-child(3) a', key: 'nav.projects' },
     { selector: 'nav ul li:nth-child(4) a', key: 'nav.skills' },
     { selector: 'nav ul li:nth-child(5) a', key: 'nav.contact' },
     
-    // Mobile menu
     { selector: '#mobile-menu ul li:nth-child(1) a', key: 'nav.home' },
     { selector: '#mobile-menu ul li:nth-child(2) a', key: 'nav.about' },
     { selector: '#mobile-menu ul li:nth-child(3) a', key: 'nav.projects' },
     { selector: '#mobile-menu ul li:nth-child(4) a', key: 'nav.skills' },
     { selector: '#mobile-menu ul li:nth-child(5) a', key: 'nav.contact' },
     
-    // Home section
     { selector: '#home h1', key: 'home.greeting', applyFunction: (element, text) => {
         element.innerHTML = text + ' <span class="text-primary">Chaïma <br />El Kadiri</span>';
       }
     },
     { selector: '#home h2', key: 'home.profession', applyFunction: (element, text) => {
-        // Only update the static part, not the typing element
         element.childNodes[0].textContent = text + ' ';
       }
     },
@@ -198,7 +192,6 @@ const translations = {
     { selector: '#home a[href="#projects"]', key: 'home.cta.work' },
     { selector: '#home a[href="#contact"]', key: 'home.cta.contact' },
     
-    // About section
     { selector: '#about h2', key: 'about.title' },
     { selector: '#about > div > div:first-child p', key: 'about.subtitle' },
     { selector: '#about h3', key: 'about.whoIAm' },
@@ -211,7 +204,6 @@ const translations = {
     { selector: '#about .grid-cols-2 > div:nth-child(4) > p:last-child', key: 'about.availableFor' },
     { selector: '#about a[download]', key: 'about.resume' },
     
-    // Projects section
     { selector: '#projects h2', key: 'projects.title' },
     { selector: '#projects > div > div:first-child p', key: 'projects.subtitle' },
     { selector: '#projects .grid-cols-1.gap-8 > div:nth-child(1) .p-6 > p', key: 'projects.items.0.description' },
@@ -220,11 +212,9 @@ const translations = {
     { selector: '#projects .grid-cols-1.gap-8 a', key: 'projects.viewProject' },
     { selector: '#projects > div > div:last-child a', key: 'projects.viewAll' },
     
-    // Skills section
     { selector: '#skills h2', key: 'skills.title' },
     { selector: '#skills > div > div:first-child p', key: 'skills.subtitle' },
     
-    // Contact section
     { selector: '#contact h2', key: 'contact.title' },
     { selector: '#contact > div > div:first-child p', key: 'contact.subtitle' },
     { selector: '#contact .grid-cols-1.gap-12 > div:first-child h3', key: 'contact.info.title' },
@@ -239,7 +229,6 @@ const translations = {
     { selector: 'label[for="message"]', key: 'contact.form.message' },
     { selector: '#submit-btn', key: 'contact.form.submit' },
     
-    // Footer
     { selector: 'footer p:first-of-type', key: 'footer.subtitle' },
     { selector: '.text-center.text-gray-400 p:first-child', key: 'footer.copyright' },
     { selector: '.text-center.text-gray-400 p:last-child', key: 'footer.madewith' }
