@@ -4,14 +4,15 @@ let charIndex = 0;
 let isDeleting = false;
 let typingDelay = 150;
 let typeTimeout;
+const baseUrl = window.location.pathname.includes('/portfolio') ? '/portfolio' : '';
 let currentLanguage = navigator.language.startsWith("fr") ? "fr" : "en";
 let translations = {};
 
 async function loadTranslations() {
   try {
     const [enResponse, frResponse] = await Promise.all([
-      fetch("/././assets/locales/en.json"),
-      fetch("/././assets/locales/fr.json"),
+      fetch(`${baseUrl}/assets/locales/en.json`),
+      fetch(`${baseUrl}/assets/locales/fr.json`),
     ]);
 
     if (!enResponse.ok || !frResponse.ok) {
