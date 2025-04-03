@@ -20,9 +20,9 @@
     "about": {
       "title": "À propos de moi",
       "subtitle": "Apprenez-en un peu plus sur moi et mon parcours professionnel.",
-      "whoIAm": "Qui suis-je",
-      "description1": "Je suis une développeuse full-stack passionnée, toujours en formation. Je me spécialise dans le développement back-end, créant des sites web efficaces et sécurisés.",
-      "description2": "Mon parcours dans le développement web a commencé lorsque j'étais à l'université, où j'ai découvert ma passion pour la création d'expériences numériques. Depuis, j'ai tout fait pour améliorer mes compétences grâce à diverses formations, dans différents langages de programmation.",
+      "whoIAm": "Qui suis-je?",
+      "description1": "Je suis une développeuse full-stack passionnée, actuellement en formation à l'A.F.C.I de Villeneuve d'Ascq. Je me spécialise dans le développement back-end, pour créer des sites web plaisants, efficaces et sécurisés.",
+      "description2": "Mon parcours dans le développement web a commencé alors que j'étais une employée de bureau qui s'ennuyait. J'ai découvert à cette époque ma passion pour la création informatique. Depuis, j'ai tout fait pour améliorer mes compétences grâce à plusieurs formations dans différents langages de programmation, et de divers outils de programmation .",
       "info": {
         "name": "Nom :",
         "email": "Email :",
@@ -40,7 +40,7 @@
       "items": [
         {
           "title": "Fandom Tales",
-          "description": "Une bibliothèque entièrement responsive construite avec PHP et Symfony, comprenant une authentification utilisateur, un éditeur de texte intégré et un tableau de bord administrateur. Ce projet est toujours en développement."
+          "description": "Une bibliothèque en ligne construite avec PHP et Symfony, comprenant une authentification utilisateur, un éditeur de texte intégré et un tableau de bord administrateur. Ce projet est en phase de conception."
         },
         {
           "title": "Site Portfolio",
@@ -48,7 +48,7 @@
         },
         {
           "title": "La Gazette du Sorcier",
-          "description": "Un forum où les fans d'Harry Potter peuvent se connecter et partager sur leur sorcier préféré. Ce projet était un projet scolaire présenté aux étudiants de la Wild Code School en juillet 2024."
+          "description": "Un forum où les fans d'Harry Potter peuvent se rejoindre et échanger sur leur sorcier préféré. Ce projet était un projet scolaire présenté aux étudiants de la Wild Code School en juillet 2024."
         }
       ]
     },
@@ -58,7 +58,7 @@
     },
     "contact": {
       "title": "Contactez-moi",
-      "subtitle": "Vous avez un projet en tête ? Travaillons ensemble pour donner vie à vos idées.",
+      "subtitle": "Une question? Un projet? N'hésitez pas!",
       "info": {
         "title": "Informations de contact",
         "email": "Email",

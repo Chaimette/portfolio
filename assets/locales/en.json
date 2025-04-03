@@ -22,7 +22,7 @@
       "subtitle": "Get to know a bit about me and my professional journey.",
       "whoIAm": "Who I Am",
       "description1": "I'm a passionate full-stack web developer, still in training. I specialize in back-end development, creating efficient and secure websites.",
-      "description2": "My journey in web development started when I was in college, where I discovered my passion for creating digital experiences. Since then, I've done everything to improve my skills with various training, in different programming languages.",
+      "description2": "My journey in web development started when I was working a boring office job. I discovered my passion for creating digital experiences. Since then, I've done everything to improve my skills with various trainings, in different programming languages and with a wide range of tools.",
       "info": {
         "name": "Name:",
         "email": "Email:",
@@ -40,7 +40,7 @@
       "items": [
         {
           "title": "Fandom Tales",
-          "description": "A fully responsive library built with PHP and Symfony, featuring user authentication, a built-in text-editor, and an admin dashboard. This project is still in development."
+          "description": "An online library built with PHP and Symfony, featuring user authentication, a built-in text-editor, and an admin dashboard. This project is still in development."
         },
         {
           "title": "Portfolio Website",
@@ -58,7 +58,7 @@
     },
     "contact": {
       "title": "Get In Touch",
-      "subtitle": "Have a project in mind? Let's work together to bring your ideas to life.",
+      "subtitle": "A question ? An idea? Don't hesitate to reach out!",
       "info": {
         "title": "Contact Information",
         "email": "Email",
