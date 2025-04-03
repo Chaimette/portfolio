@@ -10,8 +10,8 @@ let translations = {};
 async function loadTranslations() {
   try {
     const [enResponse, frResponse] = await Promise.all([
-      fetch("/assets/locales/en.json"),
-      fetch("/assets/locales/fr.json"),
+      fetch("./assets/locales/en.json"),
+      fetch("./assets/locales/fr.json"),
     ]);
 
     if (!enResponse.ok || !frResponse.ok) {
