@@ -111,7 +111,16 @@ function updateTypingWords(lang) {
 function updateLanguageDisplay(lang) {
   const displayText = getTranslation("nav.language", lang);
   document.querySelectorAll(".language-text").forEach((text) => {
-    text.textContent = displayText;
+    if (displayText.includes("{{flag:")) {
+      const baseText = displayText.split("{{")[0].trim();
+      const flagCode = displayText.match(/\{\{flag:(\w+)\}\}/)[1];
+      
+      const flagHTML = `<span class="fi fi-${flagCode} ml-1"></span>`;
+      
+      text.innerHTML = baseText + " " + flagHTML;
+    } else {
+      text.textContent = displayText;
+    }
   });
 }
 

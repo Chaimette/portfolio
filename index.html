@@ -37,6 +37,7 @@
         <link rel="stylesheet" href="./assets/css/output.css" style="border-radius: 50%"/>
         <script src="./assets/js/script.js" defer></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.11.0/css/flag-icons.min.css"/>
     </head>
     <body class="bg-gray-50 font-sans text-gray-800">
         <header class="fixed z-50 w-full bg-white/90 shadow-sm backdrop-blur-md transition-all duration-300">
@@ -65,10 +66,10 @@
                         </button></li>
                     </ul>
                     <div class="flex items-center md:hidden">
-                        <button id="mobile-language-switch" class="mr-4 rounded-lg bg-primary px-2 py-1 text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-secondary focus:outline-none">
+                        <button id="mobile-language-switch" title="translation button" class="mr-4 rounded-lg bg-primary px-2 py-1 text-white shadow-md transition-all hover:-translate-y-0.5 hover:bg-secondary focus:outline-none">
                             <span class="language-text">FR 🇫🇷</span>
                         </button>
-                        <button id="mobile-menu-button" class="text-gray-700 focus:outline-none" alt="mobile menu button">
+                        <button id="mobile-menu-button" title="translation mobile button" class="text-gray-700 focus:outline-none" alt="mobile menu button">
                             <i class="fas fa-bars text-2xl"></i>
                         </button>
                     </div>
@@ -265,7 +266,7 @@
                     <div
                         class="fade-in overflow-hidden rounded-lg bg-white shadow-lg transition-transform hover:-translate-y-2"
                     >
-                        <img src="./assets/images/logo-gazette.png" alt="Projet La Gazette du Sorcier" class="h-48 w-full" />
+                        <img src="./assets/images/logo-gazette.png" alt="Projet La Gazette du Sorcier" class="h-48 w-full object-scale-down" />
                         <div class="p-6">
                             <h3 class="mb-2 text-xl font-bold">La Gazette du Sorcier</h3>
                             <p class="mb-4 text-gray-600" data-i18n="projects.items.2.description">

@@ -5,7 +5,7 @@
       "projects": "Projets",
       "skills": "Compétences",
       "contact": "Contact",
-      "language": "EN 🇬🇧"
+      "language": "EN {{flag:gb}}"
     },
     "home": {
       "greeting": "Bonjour, je suis",
